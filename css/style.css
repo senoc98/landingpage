@@ -49,9 +49,9 @@ html, body {
   height: 100%; 
 }
 
-body {
+/*body {
   background: rgb(45,50,50);
-}
+} */
 
 /* Sections */
 .section.intro {
