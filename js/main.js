@@ -25,7 +25,7 @@ function setBindings() {
 
 }
 
-  $('.intro').parallax({imageSrc: 'img/mockupbakgrund.png'});
+  $('.intro').parallax({imageSrc:'img/kontor.bak.jpg'});
   
   window.sr = ScrollReveal();
   sr.reveal('div.container.main');

@@ -168,7 +168,7 @@ div.container.main h4 {
   height: 45px;
   width: 45px;
   display: inline-block;
-  background: url('../img/pil.png') no-repeat center;
+  background: url() no-repeat center;
   background-size: contain;
   font: 0/0 a;
   text-shadow: none;
@@ -583,4 +583,8 @@ input.foretagskod:not(:focus):valid ~ .floating-label{
 
 .submitknapp:active, .submitknapp:focus {
   transform: scale(1) !important;
+}
+
+menu {
+  
 }
