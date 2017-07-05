@@ -43,7 +43,8 @@ body {background-color: #4FBD88;}
   max-height: 120px;
   background-color: #000 !important ;
   float: left;
-  text-align: center;}
+  text-align: center;
+  align-items:center;}
 
 img.logo {
 object-fit: contain;
