@@ -22,15 +22,49 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
-
 
 </head>
 
 <body>
-  <div class="flex-container menu">
+
+<header>
+  <nav class="flex-container topbar">
+        <img class="flex-item logo" src="img/sammynylogga.png">
+        </img>
+        <div class="menu">
+            <a class="flex-item val" href="#" >Mission</a>
+            <a class="flex-item val" href="#" >Produkt</a>
+            <a class="flex-item val" href="#" >Pris</a>
+            <div class="dropdown">
+              <button style="border:none;" class="flex-item val">Mer</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+            </div> 
+        </div>  
+  </nav>
+</header> 
+
+
+  <!--
+  <nav class="flex-container topbar">
+    <div class="flex-item logo">
       <img class="flex-item logo" src="img/logosprite.png">
-  </div>
+    </div>
+    <div>  
+        <ul>
+            <li class="flex-item"><a href="">Home</a></li>
+            <li class="flex-item"><a href="">News</a></li>
+            <li class="flex-item"><a href="">Contact</a></li>
+            <li class="flex-item"><a href="">About</a></li>
+        </ul>
+    </div>   
+  </nav>
+  -->
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -54,4 +88,5 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
+
 

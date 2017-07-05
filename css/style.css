@@ -32,28 +32,45 @@ body {background-color: #4FBD88;}
     background-color: lightgrey;}
 
 .flex-item {
-    background-color: yellow;
-    justify-content: space-around;
-    width: 45%;
-    height: auto;}
+  
+  }
 
-.menu {
+.topbar {
   width: 100%;
-  max-width: 1440x;
-  max-height: 120px;
-  background-color: #000 !important ;
+  max-height: 130px;
+  background-color: #FFF !important ;
   float: left;
   text-align: center;
   align-items:center;}
+
+.menu {
+  font-size: 25px;
+  justify-content: flex-end;
+  -webkit-box-flex: 1;
+  flex: 1;
+  margin-right: 10%;
+  text-align: right;
+}
+
+.val {
+  margin-left: 8%;
+  text-decoration: none;
+  color: #2D3232;
+  font-family: Gotham rounded;
+}
 
 img.logo {
 object-fit: contain;
 margin-left: 10%;
 width: auto;
-height: 80%;
+height: 60%;
 }
 
 @media (max-width: 750px) {
   img.logo {
     display: none;
   }
+
+button.val {
+  border: none;
+}
