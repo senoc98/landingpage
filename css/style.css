@@ -31,10 +31,6 @@ body {background-color: #4FBD88;}
     height: 150px;
     background-color: lightgrey;}
 
-.flex-item {
-  
-  }
-
 .topbar {
   width: 100%;
   max-height: 130px;
@@ -59,6 +55,30 @@ body {background-color: #4FBD88;}
   font-family: Gotham rounded;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 img.logo {
 object-fit: contain;
 margin-left: 10%;
@@ -72,5 +92,4 @@ height: 60%;
   }
 
 button.val {
-  border: none;
-}
+  border: none;}
