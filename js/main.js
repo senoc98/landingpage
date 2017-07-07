@@ -25,7 +25,7 @@ function setBindings() {
 
 }
 
-  $('.intro').parallax({imageSrc:'img/kontor.bak.jpg'});
+  $('.intro').parallax({imageSrc:img\background-shapes.png'});
   
   window.sr = ScrollReveal();
   sr.reveal('div.container.main');

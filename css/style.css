@@ -21,37 +21,58 @@
           font-family: Montserrat Medium;
            src: url("../fonts/Montserrat-Medium.ttf");
       }
+html, body {
+  height: 100%;
+  width: 100%;
+}
 
-body {background-color: #4FBD88;}   
+.background { 
+  background-image: url(../img/sammylandingbackground.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #F0F1F5;
+  height: 100%;
+  width: 100%;
+}   
 
 .topbar {
   display: -webkit-flex;
   display: flex;
+  flex-direction: row;
   width: 100%;
   height: 150px;
-  max-height: 100px;
-  background-color: #FFF ;
-  float: left;
-  text-align: center;
-  align-items:center;}
+  max-height: 130px;
+  background-color: transparent;
+  text-align: left;
+  align-items: center; }
 
-.menu {
-  -webkit-box-flex: 1;
-  flex: 1;
-  margin-right: 15%;
-  text-align: right;
-}
 
 .menucontent {
   display: inline-block;
-  margin-left: 7%;
+  text-align: right;
+  flex-grow: 0.2;
+
+}
+.menucontent1 {
+  display: inline-block;
+  margin-left: 35%;
+  text-align: right;
+  flex-grow: 0.2;
+}
+.menucontent2 {
+  display: inline-block;
+  margin-right: 10%;
+  text-align: right;
+  flex-grow: 0.2;
 }
 
+
 .val {
-  font-size: 18px;
+  font-size: 22px;
   text-decoration: none;
   color: #2D3232;
-  font-family: Gotham rounded book;
+  font-family: Gotham rounded;
 }
 
 .dropdown-content {
@@ -84,34 +105,79 @@ body {background-color: #4FBD88;}
 
 img.logo {
 object-fit: contain;
-margin-left: 15%;
+margin-left: 10%;
 width: auto;
-height: 65%;
+height: 60%;
 }
 
 @media (max-width: 750px) {
-  .menu {
+  .menucontent , .menucontent1 , .menucontent2 {
     display: none;
   }}
   
 ul {
   list-style-type: none;
+  margin: 0;
 }
 
 button {
   border: none;
-}
-
-.firsttv {
-  Margin: 100px;
-  padding: 100px;
-  background-color: green;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .firstsection {
+  display: -webkit-flex;
   display: flex;
-  background-color: green;
-  height: 100%;
+  flex-direction: row;
+  width: 100%;
+  height: calc(100%-130px);
+  background-color: #000;
+  text-align: center;
+  align-items: center;
+  background-color: transparent;
+  
 }
 
+h1.headline { 
+  color: #414848;
+  font-family: gotham rounded;
+  font-size: 60px;
+}
 
+.firsttv {
+  background-color: transparent;
+  height: auto;
+  width: 100%;
+  font-family: gotham rounded book;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.firsttv2 {
+  background-color: transparent;
+  height: 50px;
+  width: 100%;
+}
+
+.firstsection
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.firstsection > div
+{
+   flex: 1 0 50%;
+}
+
+.firstsection > div:first-child 
+{
+   flex: 0 1 100%;
+}
+
+.firstsection > div:second-child
+{
+   flex: 0 1 100%;
+}
