@@ -54,13 +54,13 @@ html, body {
 
 .menucontent {
   display: inline-block;
-  word-break: break-all;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
 .val {
-  font-size: 22px;
+  font-size: 18px;
   text-decoration: none;
   color: #2D3232;
   font-family: Gotham rounded;
@@ -98,7 +98,7 @@ button {
 h1.headline { 
   color: #414848;
   font-family: gotham rounded;
-  font-size: 60px;
+  overflow: hidden;
 }
 
 .firsttv {
@@ -136,6 +136,7 @@ h1.headline {
 }
 .slicknav_menu {
   background-color: transparent !important;
+  color: #2D3232;
 }
 .slicknav_btn {
   margin-right: 10%;
@@ -200,7 +201,7 @@ h1.headline {
   height: 40px;
 }}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) { 
+@media only screen and (min-width: 768px) { 
  .slicknav_menu {
 	display:none;
 } }
