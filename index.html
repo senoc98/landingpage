@@ -17,7 +17,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/c6dda47246.js"></script>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -25,6 +25,7 @@
 <link rel="stylesheet" type="text/css" href="css/skeleton.css">
 <link rel="stylesheet" type="text/css" href="css/flexbox.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/slicknav.min.css"
 
 
 </head>
@@ -32,13 +33,13 @@
 <body>
   <div class="background">         
       <div class="topbar">
-          <div id="a">
+          <div id="menulogo">
               <a href="#">
               <img class="logo" src="img/sammynylogga.png">
               </a>
           </div>
-          <div id="b">
-            <ul>
+          <div id="menuoptions">
+            <ul id="responsivemenu">
               <li class="menucontent"><a class="val" href="#">Mission</a></li>
               <li class="menucontent"><a class="val" href="#">Produkt</a></li>
               <li class="menucontent"><a class="val" href="#">Pris</a></li>
@@ -49,7 +50,7 @@
 
   
      
-      <div class="firstsection">
+      <!--<div class="firstsection">
       <div class="firsttv2">
         <h1 class="headline"> Ett enklare arbetsmiljöarbete </h1>
       </div>
@@ -63,7 +64,7 @@
         <h1> Ett enklare arbetsmiljöarbete </h1>
       </div>
       </div> 
-      </div>
+      </div>-->
 
 
 
@@ -80,11 +81,23 @@
    <!-- End section -->
 
   <!--<script src="js/scrollreveal.js"></script>
-  <script src="js/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/main.js"></script>-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js\jquery.slicknav.min.js"> </script>
+  <script>
+	$(function(){
+		$('#responsivemenu').slicknav({
+      label: ""
+    });
+    $(document).ready(function(){
+        $('.slicknav_menu').prepend('<div id="menulogo"><a href="#"><img class="logo" src="img/sammynylogga.png"></a></div>');
+    });
+	});
+</script>
 
+ 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
