@@ -40,5 +40,3 @@ function setBindings() {
   sr.reveal('.william', { origin: 'right', delay: 500});
   sr.reveal('.container.contact');
 
-
-   

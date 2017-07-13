@@ -25,7 +25,9 @@
 <!--<link rel="stylesheet" type="text/css" href="css/skeleton.css">
 <link rel="stylesheet" type="text/css" href="css/flexbox.css">-->
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
-<link rel="stylesheet" type="text/css" href="css/slicknav.min.css"
+<link rel="stylesheet" type="text/css" href="css/slicknav.min.css">
+<link rel="stylesheet" type="text/css" href="css/morphext.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
 
 
 </head>
@@ -40,25 +42,36 @@
           </div>
           <div id="menuoptions">
             <ul id="responsivemenu">
-              <li class="menucontent" style="padding-top:20px;"><a class="val" href="#">Mission</a></li>
-              <li class="menucontent"><a class="val" href="#">Produkt</a></li>
-              <li class="menucontent" style="padding-bottom:20px;"><a class="val" href="#">Pris</a></li>
+              <li class="menucontent"><a href="#">Mission</a></li>
+              <li class="menucontent"><a href="#">Pris</a></li>
+              <li class="menucontent"><a href="#">Produkt</a></li>
+              <li class="login"><a href="login.html"> Logga in </a></li>
             </ul>  
-              
           </div>
       </div> 
 
   
      
       <div class="firstsection">
-      <div class="firsttv2">
-        <h1 class="headline"> Ett enklare arbetsmiljöarbete </h1>
-      </div>
+      <div class="maincontent">
+      <div class="firsttv">
+          <h1 class="headline"> Ett <span id="js-rotating"> enklare, smidigare, snabbare, roligare</span> arbetsmiljöarbete </h1>
+          <h2 class="underheadline"> Det digitala verktyget för att revolutionera det psykosociala arbetsmiljöarbetet. </h2>
+      </div>  
       <div class="firsttv2">
         <h2 class="underheadline"> Det digitala verktyget för att revolutionera det psykosociala arbetsmiljöarbetet. </h2>
       </div>
-      <div class="firsttv2">
-        <h1> Ett enklare arbetsmiljöarbete </h1>
+      <div><img class="mobilmock"  src="img/Frameiphoneny.png" alt=""></div>
+      <div class="firsttv3">
+        <h1 class="headline"> Prova kostnadsfritt idag </h1>
+        <h2 class="underheadline"> Det digitala verktyget för att revolutionera det psykosociala arbetsmiljöarbetet. </h2>
+      </div>
+      </div>
+      <div class="signup">
+        <a href="#"> Testa gratis</a>
+      </div>
+      <div class="contact">
+        <a href="#"> Kontakta oss</a>
       </div>
       </div> 
       </div>
@@ -83,15 +96,28 @@
   <script src="js/main.js"></script>-->
   <script src="js/jquery.min.js"></script>
   <script src="js\jquery.slicknav.min.js"> </script>
+  <script src="js/morphext.min.js"></script>
   <script>
 	$(function(){
 		$('#responsivemenu').slicknav({
-      label: ""
+      label: "", 
     });
     $(document).ready(function(){
         $('.slicknav_menu').prepend('<div id="menulogo"><a href="#"><img class="logo" src="img/sammynylogga.png"></a></div>');
-    });
+   });
 	});
+
+ $("#js-rotating").Morphext({
+    // The [in] animation type. Refer to Animate.css for a list of available animations.
+    animation: "flipInX",
+    // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+    separator: ",",
+    // The delay between the changing of each phrase in milliseconds.
+    speed: 3000,
+    complete: function () {
+        // Called after the entrance animation is executed.
+    }
+});
 </script>
 
  
