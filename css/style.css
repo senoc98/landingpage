@@ -337,6 +337,11 @@ div.firsttv h2.underheadline {
   display: block;
 }
 
+#js-rotating {
+  color: #2D3232;
+}
+
+
 li.login {
   margin-bottom: 0;
   margin-left: 0;
@@ -526,7 +531,7 @@ h2.underheadline {
 div.knappar {
   display: flex;
   justify-content: space-between;
-  width: 65%;
+  width: 570px;
 }
 }
 
@@ -558,4 +563,7 @@ div.knappar {
   div.firstsection {
     margin-top: 30px;
   }
+  div.knappar { 
+  width: 720px;
+}
 }
