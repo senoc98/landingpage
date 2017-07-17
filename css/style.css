@@ -46,11 +46,12 @@ html, body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 150px;
+  height: 90px;
   max-height: 130px;
   background-color: transparent;
   text-align: right;
   align-items: center; 
+  background:rgba(255,255,255,0.7);
   }
 
 .nav {
@@ -72,10 +73,11 @@ height: 60%;
 }
 
 .val {
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
   color: #2D3232;
   font-family: Gotham rounded;
+  opacity: 1;
 }
  
 ul {
@@ -83,12 +85,24 @@ ul {
   margin: 0;
 }
 
+.button1 {
+background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
 /*First section*/
 
 .firstsection {
   display: -webkit-flex;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   height: calc(100% - 130px);
   background-color: transparent;
@@ -119,6 +133,7 @@ ul {
 display: -webkit-flex;
 display: flex; 
 flex-grow: 1;
+flex-direction: column;
 }
 
 .mockup {
