@@ -115,11 +115,21 @@ ul {
  margin: auto;
 }
 
-.column { 
+.column {
+display: -webkit-flex;
+display: flex; 
 flex-grow: 1;
-z-index: 2;
-margin-left: 30%;
 }
+
+.mockup {
+display: -webkit-flex;
+display: flex; 
+flex-grow: 1;
+height: 671px;
+width: 492px;
+
+}
+
 
 @media (max-width: 750px) {
   .menucontent , .menucontent1 , .menucontent2 {
