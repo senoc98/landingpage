@@ -18,14 +18,21 @@
 
         input[type=text] {
             @extend %input;
-            margin-right: 20px;
-            width: 50%;
+            margin-right: 10px;
+            width: calc(100% / 3);
             box-sizing: border-box;
         }
         input[type=email] {
             @extend %input;
-            margin-left: 20px;
-            width: 50%;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: calc(100% / 3);
+            box-sizing: border-box;
+        }
+        input[type=tel] {
+            @extend %input;
+            margin-left: 10px;
+            width: calc(100% / 3);
             box-sizing: border-box;
         }
     }
