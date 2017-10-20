@@ -27,8 +27,7 @@ html, body {
   display: flex;
   height: 80px;
   width: 100%;
-  background-color: #f6f7fb;
-  z-index: 1; }
+  background-color: #F6F7FB; }
   .topmenu ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -84,72 +83,107 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   height: calc(100vh - 80px);
-  flex-direction: column;
-  z-index: -1; }
+  flex-direction: column; }
   .firstsection .backgroundfs {
     width: 100%;
     height: 85%;
     box-shadow: 2px 0px 20px 0px #C5C7C8; }
     .firstsection .backgroundfs .arbetsmiljo {
-      margin-top: 45px;
-      padding: 0 120px; }
-      .firstsection .backgroundfs .arbetsmiljo h1 {
-        font-family: "Quicksand", sans-serif;
-        font-size: 90px;
-        color: #fff;
-        font-weight: 400;
-        margin: 0; }
-    .firstsection .backgroundfs .contentwrapperfs .contentwrappertext {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: flex-start; }
-      .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .enkelt {
-        margin-top: 0px;
-        padding: 0 120px;
-        width: 40%; }
-        .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .enkelt h2 {
-          font-family: "Quicksand", sans-serif;
-          font-size: 100px;
-          color: #fff;
-          font-weight: bold;
-          margin: 0; }
-      .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .breadtext {
-        margin-top: 20px;
-        padding: 0 120px;
-        width: 40%; }
-        .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .breadtext h3 {
-          font-family: "Quicksand", sans-serif;
-          font-size: 25px;
-          color: #fff;
-          font-weight: 400;
-          margin: 0; }
-          .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .breadtext h3 span {
-            font-weight: bold;
-            font-size: 30px; }
-      .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .testbutton {
+      align-items: center;
+      padding-left: 120px;
+      height: 20%; }
+      .firstsection .backgroundfs .arbetsmiljo h1 {
+        font-family: "Quicksand", sans-serif;
+        font-size: 50px;
+        color: #fff;
+        font-weight: 400;
+        margin: 0; }
+    .firstsection .backgroundfs .contentwrapperfs {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      .firstsection .backgroundfs .contentwrapperfs .contentwrappertext {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        padding: 0 120px;
-        width: 40%;
-        height: 200px; }
-        .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .testbutton a {
-          font-family: "Quicksand", sans-serif;
-          font-size: 40px;
-          color: #7AB7DD;
-          font-weight: 500;
-          margin: 0;
-          text-decoration: none;
-          padding: 6px 30px;
-          background-color: #fff;
-          border-radius: 5px; }
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 5%; }
+        .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .enkelt {
+          padding-left: 120px;
+          width: 40%; }
+          .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .enkelt h2 {
+            font-family: "Quicksand", sans-serif;
+            font-size: 100px;
+            color: #fff;
+            font-weight: bold;
+            margin: 0; }
+        .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .breadtext {
+          padding-left: 120px;
+          width: 40%; }
+          .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .breadtext h3 {
+            font-family: "Quicksand", sans-serif;
+            font-size: 25px;
+            color: #fff;
+            font-weight: 400;
+            margin: 0; }
+            .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .breadtext h3 span {
+              font-weight: bold;
+              font-size: 30px; }
+        .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .testbutton {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          align-items: center;
+          padding-left: 120px;
+          width: 40%;
+          height: 200px; }
+          .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .testbutton a {
+            font-family: "Quicksand", sans-serif;
+            font-size: 40px;
+            color: #7AB7DD;
+            font-weight: 500;
+            margin: 0;
+            text-decoration: none;
+            padding: 6px 30px;
+            background-color: #fff;
+            border-radius: 5px; }
+      .firstsection .backgroundfs .contentwrapperfs .contentwrapperimg {
+        width: 100%;
+        margin-bottom: 5%; }
   .firstsection .externalfs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 15%;
     background-color: #F6F7FB; }
+    .firstsection .externalfs .imgreference {
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .firstsection .externalfs .textreference {
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .firstsection .externalfs .textreference a {
+        font-family: "Quicksand", sans-serif;
+        font-size: 25px;
+        color: #ADB4C5;
+        font-weight: 400;
+        text-decoration: none; }
 
 .hejsan {
   width: 100px; }
