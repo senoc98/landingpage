@@ -1,94 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+      <!-- Basic Page Needs
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+      <!-- Mobile Specific Metas
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css"  href="stylesheets/css/app.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    </head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <meta name="" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" type="text/css"  href="stylesheets/css/app.css">
-<link rel="stylesheet" type="text/css" href="normalize.css">
-<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-</head>
-
-<body>
-<header>
-  <nav class="topmenu">
-    <ul>
-      <div class="logoWrapper">
-        <li class="toplogo"> <img src="img/peopl-toplogo.svg"> </li>
-      </div>
-      <div class="linkWrapper">
-        <li> <a class="menutext" href=""> Produkt</a> </li>
-        <li> <a class="menutext" href=""> Pris</a> </li>
-        <li> <a class="menutext" href=""> Team peopl</a> </li>
-        <li class="loginbutton"> <!-- <img src="img/loginicon.svg"> --> <a class="login" href=""> Logga in</a> </li>
-      </div>
-    </ul>
-  </nav>
-</header>
-<div class="firstsection">
-    <div class="backgroundfs">
-        <div class="arbetsmiljo">
-          <h1>Arbetsmiljöarbete</h1>
+    <body>
+        <header>
+            <nav class="topmenu">
+                <ul>
+                    <div class="logoWrapper">
+                        <li class="toplogo"> <img src="img/peopl-toplogo.svg"> </li>
+                    </div>
+                    <div class="linkWrapper">
+                        <!-- <li> <a class="menutext" href=""> Produkt</a> </li>
+                        <li> <a class="menutext" href=""> Pris</a> </li>
+                        <li> <a class="menutext" href=""> Team peopl</a> </li> -->
+                        <li class="loginbutton"> <!-- <img src="img/loginicon.svg"> --> <a class="login" href=""> Logga in</a> </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <div class="firstsection">
+            <div class="backgroundfs">
+                <div class="arbetsmiljo">
+                     <h1>Arbetsmiljöarbete</h1>
+                </div>
+                <div class="contentwrapperfs">
+                    <div class="contentwrappertext">
+                        <div class="enkelt">
+                            <h2>Enkelt.</h2>
+                        </div>
+                        <div class="breadtext">
+                            <h3>Peopl är det enklaste sättet att <span>undersöka</span> och <span>förbättra</span> er sociala och organisatoriska arbetsmiljö.  </h3>
+                        </div>
+                        <div class="testbutton">
+                            <a> Testa peopl </a>
+                        </div>
+                    </div>
+                    <div class="contentwrapperimg">
+                        <img src="img/Mockup-off.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="externalfs" href="">
+                <div class="imgreference">
+                    <img src="img/Arbetsliv-logo.svg" class="mockup" >
+                </div>
+                <div class="textreference">
+                    <a href=""> Beskrivning av peopl</a>
+                </div>
+            </div>
         </div>
-        <div class="contentwrapperfs">
-          <div class="contentwrappertext">
-              <div class="enkelt">
-                <h2>Enkelt.</h2>
-              </div>
-              <div class="breadtext">
-                <h3>Peopl är det enklaste sättet att <span>undersöka</span> och <span>förbättra</span> er sociala och organisatoriska arbetsmiljö.  </h3>
-              </div>
-              <div class="testbutton">
-                      <a> Testa peopl </a>
-              </div>
-          </div>
-          <div class="contentwrapperimg">
-            <img src="img/Mockup-off.svg">
-          </div>
+        <div class="formSectionWrapper">
+            <form class="formSection" action="https://formspree.io/johannes@sammy.se" method="POST">
+                <div class="formContactInfoWrapper">
+                    <input type="text" name="Namn" placeholder="Namn" id="exampleEmailInput" required class="four columns offset-by-one">
+                    <input type="email" name="_replyto" placeholder="E-post" id="exampleEmailInput" class="four columns" required>
+                </div>
+                <div class="formMessageWrapper">
+                    <textarea name="Meddelande" class="" placeholder="Meddelande" id="exampleMessage" required></textarea>
+                </div>
+                <div class="formSubmitButton">
+                    <button class="button-primary submitknapp" type="submit" value="Skicka">Skicka</button>
+                    <!-- <input class="button-primary submitknapp" type="submit" value="Skicka"> -->
+                </div>
+            </form>
         </div>
-    </div>
-    <div class="externalfs" href="">
-      <div class="imgreference">
-          <img src="img/Arbetsliv-logo.svg" class="mockup" >
-      </div>
-      <div class="textreference">
-          <a href=""> Beskrivning av peopl</a>
-      </div>
-      </div>
-  </div>
-
-</div>
-
-<div class="formSectionWrapper">
-    <form class="formSection" action="https://formspree.io/johannes@sammy.se" method="POST">
-
-        <div class="formContactInfoWrapper">
-
-            <input type="text" name="Namn" placeholder="Namn" id="exampleEmailInput" required class="four columns offset-by-one">
-            <input type="email" name="_replyto" placeholder="E-post" id="exampleEmailInput" class="four columns" required>
-
-        </div>
-
-        <div class="formMessageWrapper">
-            <textarea name="Meddelande" class="" placeholder="Meddelande" id="exampleMessage" required></textarea>
-        </div>
-
-        <div class="formSubmitButton">
-            <button class="button-primary submitknapp" type="submit" value="Skicka">Skicka</button>
-            <!-- <input class="button-primary submitknapp" type="submit" value="Skicka"> -->
-        </div>
-
-    </form>
-
-</div>
-</body>
+    </body>
 </html>

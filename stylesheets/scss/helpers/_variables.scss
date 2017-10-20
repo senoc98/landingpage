@@ -1,4 +1,66 @@
 //Background colors
+$background-primary: #F6F7FB;
+$background-secondary: #FFF;
+$background-overlay: rgba(45, 50, 50, 0.8);
+//Primary colors, internal variables
+$bermuda: #7ADBB9;
+$cornflowerBlue: #709FF6;
+$goldenGlow: #FCEA94;
+$froly: #f57b87;
+//Hover colors
+$shamrock:#45cd9d;
+// $dodgerBlue:#3074f2;
+// $energyYellow: #FADD52;
+// $amaranth:#f03c4e;
+//Palette, global variables
+$palette-primary: $bermuda;
+$palette-secondary: $cornflowerBlue;
+$palette-tertiary: $goldenGlow;
+$palette-quaternary: $froly;
+//palette hover colors
+$palette-hover-primary:$shamrock;
+// $palette-hover-secondary:$dodgerBlue;
+// $palette-hover-tertiary:$energyYellow;
+// $palette-hover-quaternary:$amaranth;
+//Border-colors
+$border-color-primary:#dedfe2;
+$border-color-secondary:#ADB4C5;
+//Text colors
+$color-text-primary: #646B75;
+$color-text-secondary: #ADB4C5;
+$color-text-white: #FFFFFF;
+//Box-shadow
+// $boxshadow1: 2px 0px 23px 0px #C5C7C8;
+$boxshadow2:0px 2px 23px rgba(219, 221, 226, 0.7);
+//Font-familys
+$font-family-slogan:'Quicksand', sans-serif;
+$font-family-headings:'Quicksand', sans-serif;
+$font-family-subheadings:'Open Sans', sans-serif;
+$font-family-text:'Open Sans', sans-serif;
+$font-family-input:'Quicksand', sans-serif;
+$font-family-button:'Open Sans', sans-serif;
+//Font-weight
+$font-weight-slogan:400;
+$font-weight-headings:500;
+$font-weight-subheadings:600;
+$font-weight-text:300;
+$font-weight-input:400;
+$font-weight-button: 600;
+//Font sizes
+//transiition
+$transition-primary: ease 0.3s;
+
+
+
+
+
+
+
+
+
+
+
+//Background colors
 $bggrey: #f6f7fb;
 $bgwhite: #fff;
 

@@ -98,7 +98,7 @@ html, body {
       .firstsection .backgroundfs .arbetsmiljo h1 {
         font-family: "Quicksand", sans-serif;
         font-size: 50px;
-        color: #fff;
+        color: #FFFFFF;
         font-weight: 400;
         margin: 0; }
     .firstsection .backgroundfs .contentwrapperfs {
@@ -120,7 +120,7 @@ html, body {
           .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .enkelt h2 {
             font-family: "Quicksand", sans-serif;
             font-size: 100px;
-            color: #fff;
+            color: #FFFFFF;
             font-weight: bold;
             margin: 0; }
         .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .breadtext {
@@ -129,7 +129,7 @@ html, body {
           .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .breadtext h3 {
             font-family: "Quicksand", sans-serif;
             font-size: 25px;
-            color: #fff;
+            color: #FFFFFF;
             font-weight: 400;
             margin: 0; }
             .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .breadtext h3 span {
@@ -146,12 +146,12 @@ html, body {
           .firstsection .backgroundfs .contentwrapperfs .contentwrappertext .testbutton a {
             font-family: "Quicksand", sans-serif;
             font-size: 40px;
-            color: #7AB7DD;
+            color: #709FF6;
             font-weight: 500;
             margin: 0;
             text-decoration: none;
             padding: 6px 30px;
-            background-color: #fff;
+            background-color: #FFF;
             border-radius: 5px; }
       .firstsection .backgroundfs .contentwrapperfs .contentwrapperimg {
         width: 100%;
@@ -181,7 +181,7 @@ html, body {
       .firstsection .externalfs .textreference a {
         font-family: "Quicksand", sans-serif;
         font-size: 25px;
-        color: #ADB4C5;
+        color: #646B75;
         font-weight: 400;
         text-decoration: none; }
 
