@@ -1,0 +1,55 @@
+.formSectionWrapper {
+    width: 100%;
+    @include flexbox;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: $bgwhite;
+}
+
+.formSection {
+    width: 100%;
+    padding: 0 120px;
+    box-sizing: border-box;
+    .formContactInfoWrapper {
+        width: 100%;
+        @include flexbox;
+        justify-content: center;
+
+        input[type=text] {
+            @extend %input;
+            margin-right: 20px;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        input[type=email] {
+            @extend %input;
+            margin-left: 20px;
+            width: 50%;
+            box-sizing: border-box;
+        }
+    }
+
+    .formMessageWrapper {
+        width: 100%;
+        @include flexbox;
+        justify-content: center;
+        textarea {
+            @extend %input;
+            width: 100%;
+            min-height: 130px;
+            max-width: 640px;
+        }
+    }
+
+    .formSubmitButton {
+        width: 100%;
+        @include flexbox;
+        justify-content: center;
+
+        button {
+            @include button (200px, 45px, #fff, none, 5px, $boxshadow2, 0.3s ease, $backgroundpeopl, $backgroundpeopl );
+        }
+
+    }
+}

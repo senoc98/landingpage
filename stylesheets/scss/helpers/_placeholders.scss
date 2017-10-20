@@ -1,3 +1,23 @@
 %backgroundpeopl {
   background: linear-gradient(315deg, $prigreen 0%, $priblue 100%);
 }
+
+
+%input {
+    min-height: 60px;
+    max-width: 300px;
+    border: 1px solid #dedfe2;
+    background: #F6F7FB;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    color: #646B75;
+    transition: border ease 0.3s;
+    box-sizing: border-box;
+    &:focus {
+        border: 1px solid #dedfe2;
+        outline: none;
+    }
+}

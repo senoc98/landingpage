@@ -1,6 +1,23 @@
 .firstsection .backgroundfs {
   background: linear-gradient(315deg, #7ADBB9 0%, #709FF6 100%); }
 
+.formSection .formContactInfoWrapper input[type=text], .formSection .formContactInfoWrapper input[type=email], .formSection .formMessageWrapper textarea {
+  min-height: 60px;
+  max-width: 300px;
+  border: 1px solid #dedfe2;
+  background: #F6F7FB;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: #646B75;
+  transition: border ease 0.3s;
+  box-sizing: border-box; }
+  .formSection .formContactInfoWrapper input[type=text]:focus, .formSection .formContactInfoWrapper input[type=email]:focus, .formSection .formMessageWrapper textarea:focus {
+    border: 1px solid #dedfe2;
+    outline: none; }
+
 html, body {
   margin: 0; }
 
@@ -136,5 +153,63 @@ html, body {
 
 .hejsan {
   width: 100px; }
+
+.formSectionWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background: #fff; }
+
+.formSection {
+  width: 100%;
+  padding: 0 120px;
+  box-sizing: border-box; }
+  .formSection .formContactInfoWrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center; }
+    .formSection .formContactInfoWrapper input[type=text] {
+      margin-right: 20px;
+      width: 50%;
+      box-sizing: border-box; }
+    .formSection .formContactInfoWrapper input[type=email] {
+      margin-left: 20px;
+      width: 50%;
+      box-sizing: border-box; }
+  .formSection .formMessageWrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center; }
+    .formSection .formMessageWrapper textarea {
+      width: 100%;
+      min-height: 130px;
+      max-width: 640px; }
+  .formSection .formSubmitButton {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center; }
+    .formSection .formSubmitButton button {
+      width: 200px;
+      height: 45px;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0px 2px 23px rgba(219, 221, 226, 0.7);
+      transition: background 0.3s ease;
+      background: linear-gradient(315deg, #7ADBB9 0%, #709FF6 100%); }
+      .formSection .formSubmitButton button:hover {
+        background: linear-gradient(315deg, #7ADBB9 0%, #709FF6 100%); }
+      .formSection .formSubmitButton button:focus {
+        outline: none; }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,16 @@
+@mixin button ($width, $height, $textcolor, $border, $radius, $shadow, $transition, $bgcolor, $hover-color){
+    width: $width;
+    height: $height;
+    color: $textcolor;
+    border-radius: $radius;
+    border: $border;
+    box-shadow: $shadow;
+    transition: background $transition;
+    background: $bgcolor;
+    &:hover {
+        background: $hover-color;
+    }
+    &:focus {
+        outline: none;
+    }
+}
