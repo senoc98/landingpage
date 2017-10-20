@@ -1,9 +1,9 @@
 .firstsection .backgroundfs {
   background: linear-gradient(315deg, #7ADBB9 0%, #709FF6 100%); }
 
-.formSection .formContactInfoWrapper input[type=text], .formSection .formContactInfoWrapper input[type=email], .formSection .formMessageWrapper textarea {
+.formSection .formContactInfoWrapper input[type=text], .formSection .formContactInfoWrapper input[type=email], .formSection .formContactInfoWrapper input[type=tel], .formSection .formMessageWrapper textarea {
   min-height: 60px;
-  max-width: 300px;
+  max-width: 200px;
   border: 1px solid #dedfe2;
   background: #F6F7FB;
   border-radius: 5px;
@@ -14,7 +14,7 @@
   color: #646B75;
   transition: border ease 0.3s;
   box-sizing: border-box; }
-  .formSection .formContactInfoWrapper input[type=text]:focus, .formSection .formContactInfoWrapper input[type=email]:focus, .formSection .formMessageWrapper textarea:focus {
+  .formSection .formContactInfoWrapper input[type=text]:focus, .formSection .formContactInfoWrapper input[type=email]:focus, .formSection .formContactInfoWrapper input[type=tel]:focus, .formSection .formMessageWrapper textarea:focus {
     border: 1px solid #dedfe2;
     outline: none; }
 
@@ -209,12 +209,17 @@ html, body {
     display: flex;
     justify-content: center; }
     .formSection .formContactInfoWrapper input[type=text] {
-      margin-right: 20px;
-      width: 50%;
+      margin-right: 10px;
+      width: calc(100% / 3);
       box-sizing: border-box; }
     .formSection .formContactInfoWrapper input[type=email] {
-      margin-left: 20px;
-      width: 50%;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: calc(100% / 3);
+      box-sizing: border-box; }
+    .formSection .formContactInfoWrapper input[type=tel] {
+      margin-left: 10px;
+      width: calc(100% / 3);
       box-sizing: border-box; }
   .formSection .formMessageWrapper {
     width: 100%;
