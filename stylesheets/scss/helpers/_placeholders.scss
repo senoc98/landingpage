@@ -1,5 +1,5 @@
 %backgroundpeopl {
-  background: linear-gradient(315deg, $prigreen 0%, $priblue 100%);
+  background: linear-gradient(150deg, $palette-primary 25%, rgba(0,0,0,0) 25%), linear-gradient(150deg, $palette-secondary 50%, rgba(0,0,0,0) 50%), linear-gradient(150deg, $palette-tertiary 75%, rgba(0, 0, 0, 0) 75%), linear-gradient(150deg, $palette-quaternary 100%, rgba(0, 0, 0, 0) 100%);
 }
 
 

@@ -1,5 +1,5 @@
 .firstsection .backgroundfs {
-  background: linear-gradient(315deg, #7ADBB9 0%, #709FF6 100%); }
+  background: linear-gradient(150deg, #7ADBB9 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(150deg, #709FF6 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(150deg, #FB8883 75%, rgba(0, 0, 0, 0) 75%), linear-gradient(150deg, #FED98F 100%, rgba(0, 0, 0, 0) 100%); }
 
 .formSection .formContactInfoWrapper input[type=text], .formSection .formContactInfoWrapper input[type=email], .formSection .formContactInfoWrapper input[type=tel], .formSection .formMessageWrapper textarea {
   min-height: 60px;
