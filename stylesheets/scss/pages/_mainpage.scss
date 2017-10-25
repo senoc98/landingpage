@@ -1,180 +1,574 @@
-html, body{
-  margin: 0;
+html, body {
+    height: 100%;
 }
 
-//topmenu laptop large
-
-.topmenu {
-@include flexbox;
-  height: 80px;
-  width: 100%;
-  background-color: $background-primary;
-  ul{
-    @include flexbox;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    padding:0;
-    margin:0;
-    justify-content: space-between;
-    padding: 0 120px;
-    li{
-      list-style-type: none;
-    }
-    .logoWrapper{
-      @include flexbox;
-      align-items: center;
-      li{
-        @include flexbox;
-        align-items: center;
-        img{
-          height: 50px;
-        }
-      }
-      }
-    .linkWrapper{
-      @include flexbox;
-      flex-direction: row;
-      width: 60%;
-      height: 100%;
-      align-items: center;
-      justify-content: flex-end;
-      li{
-        margin-right: 8%;
-        &:last-of-type {
-          margin-right: 0;
-        }
-        a{
-          font-family: $font-family;
-          font-size: 20px;
-          color: $normal-text;
-          text-decoration: none;
-          font-weight: 500;
-        }
-      }
-      .loginbutton{
-        padding: 4px 30px;
-        background-color:transparent;
-        border: 1px solid $border-color-primary;
-        border-radius: 5px;
-      }
-      }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 200vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    height: 260vh;
   }
 }
 
-//Firstsection laptop large
-
-.firstsection{
+.topmenu {
     @include flexbox;
-    height: calc(100vh - 80px);
-    flex-direction: column;
-    .backgroundfs{
-        @extend %backgroundpeopl;
-        width:100%;
-        height:85%;
-        box-shadow: $boxshadow1;
-        .arbetsmiljo{
+    justify-content: center;
+    width:100%;
+    min-width: 320px;
+    height: 60px;
+    background-color: $bg--primary;
+    border-bottom: 1px solid $border-color--primary;
+    @include respond-to(small-phone-landscape){
+        height: 50px;
+    };
+    @include respond-to(medium-phone) {
+        height: 70px;
+    };
+    @include respond-to(tablet) {
+        height: 80px;
+    };
+    @include respond-to(laptop) {
+        height: 100px;
+        padding: 0 5%;
+        box-sizing: border-box;
+    };
+    ul {
+        margin: 0;
+        padding: 0;
+        @include flexbox;
+        list-style: none;
+        @include respond-to(laptop) {
+            width: 100%;
+            max-width: 1500px;
+        };
+        .topmenu--logoWrapper {
             @include flexbox;
             align-items: center;
-            padding-left: 120px;
-            height: 20%;
-            h1{
-                font-family:$font-family;
-                font-size: 50px;
-                color: $color-text-white;
-                font-weight: 400;
-                margin: 0;
+            .topmenu--logo {
+                height: 35px;
+                img {
+                    height: 35px;
+                    width: 143.75px;
+                    @include respond-to(tablet) {
+                        height: 40px;
+                        width: 164.28px;
+                    };
+                    @include respond-to(laptop) {
+                        height: 45px;
+                        width: 185px;
+                    };
+                }
+                @include respond-to(tablet) {
+                    height: 40px;
+                };
+                @include respond-to(tablet) {
+                    height: 45px;
+                };
             }
         }
-        .contentwrapperfs{
-            @include flexbox;
-            flex-direction: row;
-            width: 100%;
+        .topmenu--linkWrapper {
+            display: none;
+            .topmenu--loginbutton {
 
-            .contentwrappertext{
-                @include flexbox;
-                flex-direction: column;
-                align-items: flex-start;
-                margin-bottom: 5%;
-                .enkelt{
-                    padding-left: 120px;
-                    width: 40%;
-                    h2{
-                        font-family:$font-family;
-                        font-size: 100px;
-                        color: $color-text-white;
-                        font-weight: bold;
-                        margin: 0;
-                    }
-                }
-                .breadtext{
-                    padding-left: 120px;
-                    width: 40%;
-                    h3{
-                        font-family:$font-family;
-                        font-size: 25px;
-                        color: $color-text-white;
-                        font-weight: 400;
-                        margin: 0;
-                        span{
-                        font-weight: bold;
-                        font-size: 30px;
-                        }
-                    }
-                }
-
-                .testbutton {
-                    @include flexbox;
-                    align-items: center;
-                    padding-left: 120px;
-                    width: 40%;
-                    height:200px;
-                    a{
-                        font-family:$font-family;
-                        font-size: 40px;
-                        color: $palette-secondary;
-                        font-weight: 500;
-                        margin: 0;
-                        text-decoration: none;
-                        padding: 6px 30px;
-                        background-color: $background-secondary;
-                        border-radius: 5px;
-                    }
-
-                }
-            }
-            .contentwrapperimg  {
-            width: 100%;
-            margin-bottom: 5%;
-                .mockup {
-
-                }
             }
         }
     }
-    .externalfs{
+}
+
+.firstsection {
+    height: calc(100% - 61px);
+    min-height: 507px;
+    min-width: 320px;
+    @include respond-to(small-phone-landscape){
+        height: calc(100% - 51px);
+    };
+    @include respond-to(medium-phone) {
+        height: calc(100% - 71px);
+    };
+    @include respond-to(tablet) {
+        height: calc(100% - 81px);
+    };
+    @include respond-to(laptop) {
+        height: calc(100% - 100px);
+        max-height: 805px;
+    };
+    .firstsection--bg {
+        @extend %fs--background;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 20px 10px;
         @include flexbox;
-        flex-direction: row;
-        width: 100%;
-        height: 15%;
-        background-color: $background-primary;
-        .imgreference{
-            width: 50%;
+        justify-content: center;
+        @include respond-to(laptop) {
+            padding: 5%;
+            align-items: center;
+        };
+        .firstsection--inner {
+            height: 100%;
             @include flexbox;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
+            max-width: 1500px;
+            width: 100%;
+            @include respond-to(laptop) {
+                max-height: 600px;
+            };
         }
-        .textreference{
-            width: 50%;
+    }
+}
+
+.headline--firstsection {
+    margin-top: -10px;
+    h1 {
+        font-size: $font-size--hero-heading;
+        @include normalizemp;
+        font-family: $font-family--headings;
+        font-weight: $font-weight--slogan;
+        text-align: center;
+        color: $color-text--primary;
+        @include respond-to(small-phone-landscape){
+            font-size: 28px;
+         };
+        @include respond-to(large-phone) {
+            font-size: 40px;
+        };
+        @include respond-to(tablet) {
+            font-size: 50px;
+        };
+        @include respond-to(laptop) {
+            text-align: left;
+            font-size: 60px;
+        };
+    }
+}
+
+.txtgreen {
+    color: $palette--primary;
+}
+
+.firstsection--content {
+    @include flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(95% - 45px);
+    box-sizing: border-box;
+    min-height: 363px;
+    @include respond-to(tablet) {
+        height: calc(90% - 45px);
+    };
+    @include respond-to(laptop) {
+        flex-wrap: wrap;
+        min-height: 0;
+        height: calc(100% - 75px);
+    };
+    .firstsection--headlinecont {
+        order: 1;
+        @include respond-to(laptop) {
+            width: 40%;
+            min-width: 394px;
+        };
+        .headline-bold {
+            @include normalizemp;
+            font-size: $font-size--hero-heading;
+            font-family: $font-family--headings;
+            font-weight: 700;
+            color: $palette--secondary;
+            text-align: center;
+            @include respond-to(small-phone-landscape) {
+                font-size: 28px;
+            };
+            @include respond-to(large-phone) {
+                font-size: 40px;
+            };
+            @include respond-to(tablet) {
+                font-size: 50px;
+            };
+            @include respond-to(laptop) {
+                text-align: left;
+                font-size: 60px;
+            };
+        }
+    }
+    .firstsection--text {
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include respond-to(laptop) {
+            order: 2;
+            height: calc(100% - 94px);
+            width: 40%;
+            min-width: 394px;
+            align-items: flex-start;
+        };
+        .subheadline--firstsection {
+            @include normalizemp;
+            font-size: $font-size--hero-subheading;
+            color: $color-text--primary;
+            text-align: center;
+            font-family:'Open Sans', sans-serif;
+            font-weight: 400;
+            max-width: 375px;
+            margin-bottom: 25px;
+            @include respond-to(medium-phone) {
+                font-size: 15px;
+            };
+            @include respond-to(large-phone) {
+                font-size: 16px;
+                margin-bottom: 30px;
+            };
+            @include respond-to(tablet) {
+                font-size: 22px;
+                max-width: 500px;
+            };
+            @include respond-to(laptop) {
+                font-size: 18px;
+                text-align: left;
+                max-width: 500px;
+                margin-top: 20px;
+             };
+             @include respond-to(laptop-large) {
+                 font-size: 20px;
+             };
+           span {
+                font-size: 16px;
+                font-weight: 700;
+                @include respond-to(medium-phone) {
+                    font-size: 18px;
+                };
+                @include respond-to(large-phone) {
+                    font-size: 20px;
+                };
+                @include respond-to(tablet) {
+                    font-size: 25px;
+                };
+                @include respond-to(laptop) {
+                    font-size: 22px;
+                };
+                @include respond-to(laptop-large) {
+                    font-size: 23px;
+                };
+            }
+        }
+        .btn--testApp {
+            @include button(135px, 40px, white, none, 5px, $box-shadow, 0.3s ease, $palette--secondary, $palette--secondary-hover);
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 40px;
+            font-size: 13px;
+            @include normalizemp;
+            font-family: $font-family--button;
+            font-weight: $font-weight--button;
+            letter-spacing: 1px;
+            @include respond-to(medium-phone) {
+                font-size: 15px;
+                width: 150px;
+                height: 45px;
+                line-height: 45px;
+            };
+            @include respond-to(large-phone) {
+                font-size: 17px;
+                width: 160px;
+                height: 50px;
+                line-height: 50px;
+            };
+            @include respond-to(tablet) {
+                line-height: 55px;
+                height: 55px;
+            };
+            @include respond-to(laptop) {
+                margin-top: auto;
+                margin-bottom: 30px;
+            };
+        }
+    }
+    .mockup {
+        @include flexbox;
+        justify-content: center;
+        margin-top: -10px;
+        order: 2;
+        @include respond-to(laptop) {
+            width: 60%;
+            height: 100%;
+            order: 3;
+            padding-left: 20px;
+            box-sizing: border-box;
+            margin-top:auto;
+        };
+        img {
+            height: 100%;
+            min-height: 160px;
+            width: 85%;
+            @include respond-to(large-phone) {
+                width: 90%;
+            };
+            @include respond-to(tablet) {
+                max-width: 650px;
+            };
+            @include respond-to(laptop) {
+                width: 100%;
+                max-width: none;
+            };
+        }
+    }
+}
+
+.formsection {
+    min-width: 320px;
+    background: #f6f7fb;
+    padding: 10px 0;
+    @include flexbox;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 65px);
+    min-height: 480px;
+    box-sizing: border-box;
+    justify-content: center;
+    @include respond-to(large-phone) {
+        height: calc(100% - 80px);
+    };
+    @include respond-to(laptop) {
+        height: calc(100% - 100px);
+        max-height: 700px;
+    };
+    .formsection--headline {
+        @include normalizemp;
+        font-size: 16px;
+        color: $color-text--primary;
+        text-align: center;
+        font-family:'Open Sans', sans-serif;
+        font-weight: $font-weight--subheadings;
+        max-width: 340px;
+        width: 85%;
+        @include respond-to(medium-phone) {
+            font-size: 19px;
+        };
+        @include respond-to(large-phone) {
+            font-size: 21px;
+        };
+        @include respond-to(tablet) {
+            font-size: 26px;
+            max-width: 500px;
+        };
+        @include respond-to(laptop) {
+            max-width: 700px;
+        };
+    }
+    .formsection--headline-divider {
+        height: 5px;
+        width: 50px;
+        background: #F4E48A;
+        border-radius: 5px;
+        margin: 10px 0;
+        @include respond-to(tablet) {
+            margin: 15px 0;
+        };
+    }
+    .formsection--subheadline {
+        @include normalizemp;
+        font-size: 16px;
+        color: $color-text--primary;
+        text-align: center;
+        font-family:'Open Sans', sans-serif;
+        font-weight: 300;
+        max-width: 340px;
+        width: 85%;
+        @include respond-to(medium-phone) {
+            font-size: 19px;
+        };
+        @include respond-to(large-phone) {
+            font-size: 20px;
+        };
+        @include respond-to(tablet) {
+            font-size: 22px;
+            max-width: 450px;
+        };
+        @include respond-to(laptop) {
+            max-width: 700px;
+        };
+    }
+    .form--formsection {
+        width: 100%;
+        @include flexbox;
+        flex-direction: column;
+        align-items: center;
+        .inputs--formsection {
             @include flexbox;
-            justify-content: flex-start;
+            flex-direction: column;
             align-items: center;
-            a{
-                font-family:$font-family;
-                font-size: 25px;
-                color: $color-text-primary;
-                font-weight: 400;
-                text-decoration: none;
+            width: 100%;
+            @include respond-to(large-phone) {
+                margin-top: 5px;
+            };
+            @include respond-to(laptop) {
+                flex-direction: row;
+                width: 70%;
+                margin-top: 20px;
+                max-width: 1000px;
+            };
+            input {
+                @extend %input;
+                height: 40px;
+                width: 80%;
+                max-width: 340px;
+                margin-top: 10px;
+                &:focus {
+                    border: 1px solid $palette--secondary;
+                }
+                &:first-of-type {
+                    text-transform: capitalize;
+                    @include respond-to(laptop) {
+                        margin-left: 0;
+                    };
+                }
+                @include respond-to(medium-phone) {
+                    height: 45px;
+                    font-size: 15px;
+                    margin-top: 15px;
+                };
+                @include respond-to(large-phone) {
+                    height: 50px;
+                    font-size: 17px;
+                    margin-top: 20px;
+                };
+                @include respond-to(tablet) {
+                    height: 55px;
+                    font-size: 19px;
+                    max-width: 500px;
+                    margin-top: 25px;
+                };
+                @include respond-to(laptop) {
+                    margin-top: 0;
+                    margin-left: 20px;
+                    padding: 10px 15px;
+                };
+            }
+
+        }
+        .inputs-message--formsection {
+            @include flexbox;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            width: 100%;
+            @include respond-to(medium-phone) {
+                margin-top: 15px;
+            };
+            @include respond-to(large-phone) {
+                margin-top: 20px;
+            };
+            @include respond-to(tablet) {
+                margin-top: 25px;
+            };
+            textarea {
+                @extend %input;
+                height: 120px;
+                width: 80%;
+                max-width: 340px;
+                resize: none;
+                min-height: 100px;
+                &:focus {
+                    border: 1px solid $palette--secondary;
+                }
+                @include respond-to(large-phone) {
+                    font-size: 17px;
+                    height: 140px;
+                };
+                @include respond-to(tablet) {
+                    height: 200px;
+                    font-size: 19px;
+                    max-width: 500px;
+                };
+                @include respond-to(laptop) {
+                    padding: 10px 15px;
+                    width: 70%;
+                    max-width: none;
+                    height: 240px;
+                    max-width: 1000px;
+                };
+            }
+        }
+        button.btn--submitForm {
+        @include button(200px, 40px, white, none, 5px, $box-shadow, 0.3s ease, $palette--secondary, $palette--secondary-hover);
+        margin-top: 15px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: $font-family--button;
+        font-weight: $font-weight--button;
+        letter-spacing: 1px;
+        font-size: 13px;
+        @include respond-to(medium-phone) {
+            margin-top: 30px;
+            font-size: 15px;
+            width: 220px;
+            height: 45px;
+        };
+        @include respond-to(large-phone) {
+            margin-top: 25px;
+            font-size: 17px;
+            width: 240px;
+            height: 50px;
+        };
+        @include respond-to(tablet) {
+            margin-top: 45px;
+            height: 55px;
+        };
+        }
+    }
+}
+
+.footersection {
+    height: 65px;
+    @include flexbox;
+    align-items: center;
+    background: #dde1f1;
+    padding: 0 10px;
+    min-width: 320px;
+    box-sizing: border-box;
+    @include respond-to(large-phone) {
+        height: 80px;
+    };
+    @include respond-to(laptop) {
+        height: 100px;
+    };
+    .contactInfo {
+        width: 80%;
+        p {
+            @include normalizemp;
+            font-size: 10px;
+            color: $color-text--primary;
+            font-family: $font-family--text;
+            font-weight: 400;
+            @include respond-to(large-phone) {
+                font-size: 12px;
+            };
+            @include respond-to(laptop) {
+                font-size: 13px;
+            };
+        }
+    }
+    .facebookIcon {
+        width: 20%;
+        height: 100%;
+        font-size: 30px;
+        @include flexbox;
+        align-items: center;
+        justify-content: center;
+        @include respond-to(laptop) {
+            font-size: 36px;
+        };
+        a {
+            color: $color-text--primary;
+            transition: color 250ms ease;
+            &:hover {
+                color: #3B5998;
+                cursor: pointer;
             }
         }
     }

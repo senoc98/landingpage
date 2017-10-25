@@ -1,16 +1,22 @@
-%backgroundpeopl {
-  background: linear-gradient(150deg, $palette-primary 25%, rgba(0,0,0,0) 25%), linear-gradient(150deg, $palette-secondary 50%, rgba(0,0,0,0) 50%), linear-gradient(150deg, $palette-tertiary 75%, rgba(0, 0, 0, 0) 75%), linear-gradient(150deg, $palette-quaternary 100%, rgba(0, 0, 0, 0) 100%);
+%fs--background {
+  background: #f6f7fb;
 }
-
+/*
+%fs--background {
+    background: linear-gradient(150deg, $palette--primary 25%, rgba(0,0,0,0) 25%), linear-gradient(150deg, $palette--secondary 50%, rgba(0,0,0,0) 50%), linear-gradient(150deg, $palette--tertiary 75%, rgba(0, 0, 0, 0) 75%), linear-gradient(150deg, $palette--quaternary 100%, rgba(0, 0, 0, 0) 100%);
+}*/
+/*
+%fs--background {
+    background: linear-gradient(to bottom right, #52a7f8 0, #6ae9c1 50%, #FF716C 50%, #FCF58E 100%);
+}
+*/
 
 %input {
-    min-height: 60px;
-    max-width: 200px;
     border: 1px solid #dedfe2;
-    background: #F6F7FB;
+    background: white;
     border-radius: 5px;
-    padding: 0 10px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 14px;
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
     color: #646B75;

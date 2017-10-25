@@ -10,3 +10,26 @@
   display: -webkit-box;display: -ms-flexbox;
   display: flex;
 }
+//no margin/padding
+@mixin normalizemp {
+    padding: 0;
+    margin: 0;
+}
+//responsiveness
+@mixin respond-to($media) {
+  @if $media == medium-phone {
+    @media only screen and (min-width: $break--med-phone) { @content; }
+  }
+  @else if $media == large-phone {
+    @media only screen and (min-width: $break--lrg-phone) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $break--tablet) { @content; }
+  }
+  @else if $media == laptop {
+    @media only screen and (min-width: $break--laptop) { @content; }
+  }
+  @else if $media == laptop-large {
+    @media only screen and (min-width: $break--laptop-lrg) { @content; }
+  }
+}
