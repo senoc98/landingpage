@@ -53,12 +53,12 @@ html, body {
       height: 70px; } }
   @media only screen and (min-width: 750px) {
     .topmenu {
-      height: 80px; } }
-  @media only screen and (min-width: 1000px) {
-    .topmenu {
-      height: 100px;
+      height: 80px;
       padding: 0 5%;
       box-sizing: border-box; } }
+  @media only screen and (min-width: 1000px) {
+    .topmenu {
+      height: 100px; } }
   .topmenu ul {
     margin: 0;
     padding: 0;
@@ -66,9 +66,15 @@ html, body {
     display: -ms-flexbox;
     display: flex;
     list-style: none; }
-    @media only screen and (min-width: 1000px) {
+    @media only screen and (min-width: 750px) {
       .topmenu ul {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between; } }
+    @media only screen and (min-width: 1000px) {
+      .topmenu ul {
         max-width: 1500px; } }
     .topmenu ul .topmenu--logoWrapper {
       display: -webkit-box;
@@ -95,35 +101,38 @@ html, body {
           .topmenu ul .topmenu--logoWrapper .topmenu--logo {
             height: 45px; } }
     .topmenu ul .topmenu--linkWrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      width: 100%; }
-      .topmenu ul .topmenu--linkWrapper .topmenu--loginbutton {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        align-items: center;
-        color: #646B75;
-        border: 1px solid #646B75;
-        font-family: "Quicksand", sans-serif;
-        border-radius: 5px;
-        height: 28px;
-        width: 120px; }
-        .topmenu ul .topmenu--linkWrapper .topmenu--loginbutton:hover {
-          border-color: #48cfad; }
-          .topmenu ul .topmenu--linkWrapper .topmenu--loginbutton:hover a {
-            color: #48cfad; }
-        .topmenu ul .topmenu--linkWrapper .topmenu--loginbutton a {
-          text-decoration: none;
-          text-align: center;
-          font-weight: 400;
-          font-size: 20px;
-          color: #646B75;
-          height: 100%;
+      display: none; }
+      @media only screen and (min-width: 750px) {
+        .topmenu ul .topmenu--linkWrapper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
           width: 100%; }
+          .topmenu ul .topmenu--linkWrapper .topmenu--loginbutton {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            align-items: center;
+            color: #646B75;
+            border: 1px solid #646B75;
+            font-family: "Quicksand", sans-serif;
+            border-radius: 5px;
+            height: 28px;
+            width: 120px; }
+            .topmenu ul .topmenu--linkWrapper .topmenu--loginbutton:hover {
+              border-color: #48cfad; }
+              .topmenu ul .topmenu--linkWrapper .topmenu--loginbutton:hover a {
+                color: #48cfad; }
+            .topmenu ul .topmenu--linkWrapper .topmenu--loginbutton a {
+              text-decoration: none;
+              text-align: center;
+              font-weight: 400;
+              font-size: 20px;
+              color: #646B75;
+              height: 100%;
+              width: 100%; } }
 
 .firstsection {
   height: calc(100% - 61px);
@@ -577,7 +586,8 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  background: #dde1f1;
+  background: #f6f7fb;
+  border-top: 1px solid #dedfe2;
   padding: 0 10px;
   min-width: 320px;
   box-sizing: border-box; }
@@ -685,5 +695,15 @@ html, body {
     }
 }
 */
+.termWrapper {
+  padding: 30px; }
+  .termWrapper h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600; }
+  .termWrapper li {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none; }
 
 /*# sourceMappingURL=app.css.map */

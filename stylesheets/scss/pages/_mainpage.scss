@@ -31,19 +31,24 @@ html, body {
     };
     @include respond-to(tablet) {
         height: 80px;
+        padding: 0 5%;
+        box-sizing: border-box;
     };
     @include respond-to(laptop) {
         height: 100px;
-        padding: 0 5%;
-        box-sizing: border-box;
+
     };
     ul {
         margin: 0;
         padding: 0;
         @include flexbox;
         list-style: none;
-        @include respond-to(laptop) {
+        @include respond-to(tablet) {
             width: 100%;
+            @include flexbox;
+            justify-content: space-between;
+        };
+        @include respond-to(laptop) {
             max-width: 1500px;
         };
         .topmenu--logoWrapper {
@@ -72,36 +77,40 @@ html, body {
             }
         }
         .topmenu--linkWrapper {
-            @include flexbox;
-            justify-content: flex-end;
-            align-items: center;
-            width: 100%;
-            .topmenu--loginbutton {
-                @include flexbox;
-                align-items: center;
-                color: $color-text--primary;
-                border: 1px solid $color-text--primary;
-                font-family: "Quicksand", sans-serif;
-                border-radius: 5px;
-                height: 28px;
-                width: 120px;
-                &:hover {
-                    border-color: $palette--primary;
-                    a {
-                        color:$palette--primary;
-                    }
-                }
-                    a{
-                        text-decoration: none;
-                        text-align: center;
-                        font-weight: 400;
-                        font-size: 20px;
-                        color: #646B75;
-                        height: 100%;
-                        width: 100%;
-                    }
+            display: none;
 
-            }
+            @include respond-to(tablet) {
+                @include flexbox;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                .topmenu--loginbutton {
+                    @include flexbox;
+                    align-items: center;
+                    color: $color-text--primary;
+                    border: 1px solid $color-text--primary;
+                    font-family: "Quicksand", sans-serif;
+                    border-radius: 5px;
+                    height: 28px;
+                    width: 120px;
+                    &:hover {
+                        border-color: $palette--primary;
+                        a {
+                            color:$palette--primary;
+                        }
+                    }
+                        a{
+                            text-decoration: none;
+                            text-align: center;
+                            font-weight: 400;
+                            font-size: 20px;
+                            color: #646B75;
+                            height: 100%;
+                            width: 100%;
+
+                        }
+                    }
+            };
         }
     }
 }
@@ -553,7 +562,8 @@ html, body {
     height: 65px;
     @include flexbox;
     align-items: center;
-    background: #dde1f1;
+    background: #f6f7fb;
+    border-top: 1px solid #dedfe2;
     padding: 0 10px;
     min-width: 320px;
     box-sizing: border-box;

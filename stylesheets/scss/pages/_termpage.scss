@@ -1,0 +1,13 @@
+.termWrapper {
+    padding: 30px;
+    h1{
+        font-family: $font-family--subheadings;
+        font-weight: 600;
+    }
+    li{
+        font-family: $font-family--text;
+        font-weight: 600;
+        text-decoration: none;
+        list-style: none;
+    }
+}
